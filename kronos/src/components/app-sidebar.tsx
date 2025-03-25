@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import {
+  IconUserPlus,
   IconCamera,
   IconDashboard,
   IconFileAi,
@@ -25,7 +26,6 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import { UserPlus } from "lucide-react"
 
 const data = {
   user: {
@@ -36,18 +36,18 @@ const data = {
   navMain: [
     {
       title: "Painel",
-      url: "#",
+      url: "/dashboard",
       icon: IconDashboard,
     },
     {
       title: "Detentos",
-      url: "listar-detentos",
+      url: "/dashboard/listar-detentos",
       icon: IconUsers,
     },
     {
       title: "Novo Detento",
       url: "#",
-      icon: UserPlus,
+      icon: IconUserPlus,
     },
     
     {
@@ -58,7 +58,7 @@ const data = {
     {
       title: "Novo Visitante",
       url: "#",
-      icon: UserPlus,
+      icon: IconUserPlus,
     },
     {
       title: "Visitante",
